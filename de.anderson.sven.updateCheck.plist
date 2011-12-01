@@ -11,12 +11,13 @@
   dialog. This agent also works for users without administrative rights.
 
   To install it, move this file to ~/Library/LaunchAgents/ and
-  re-login.
+  re-login or execute
+  launchctl load ~/Library/LaunchAgents/de.anderson.sven.updateCheck.plist
 
   Installing Growl is highly recommended: http://growl.info/
 
-To make this work nicely you'll need to modify the script to add the
-following to your sudoers file with "sudo visudo":
+To make this work nicely you'll need to add the following to your sudoers
+file with "sudo visudo":
 
 <your username> ALL=NOPASSWD:/usr/sbin/softwareupdate
 
