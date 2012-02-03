@@ -7,14 +7,12 @@
   
   This is an applescript based launch agent, that checks once per day
   for available software updates. If there are any, it announces them
-  as a Growl notification or - if it is not installed - as a system
-  dialog. This agent also works for users without administrative rights.
+  if it is not installed - as a system dialog. This agent also works 
+  for users without administrative rights.
 
   To install it, move this file to ~/Library/LaunchAgents/ and
   re-login or execute
   launchctl load ~/Library/LaunchAgents/de.anderson.sven.updateCheck.plist
-
-  Installing Growl is highly recommended: http://growl.info/
 
 To make this work nicely you'll need to add the following to your sudoers
 file with "sudo visudo":
