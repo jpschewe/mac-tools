@@ -4,7 +4,8 @@
 <!--
 Put this in /Library/LaunchDaemons, then create a group named
 "access_bpf" and add the users that should be able to capture network
-packets to it.
+packets to it. Make sure that /Library/LaunchDaemons/chmodbpf.plist is
+owned by root and group wheel, otherwise it won't work.
 -->
 <dict>
         <key>Label</key>
